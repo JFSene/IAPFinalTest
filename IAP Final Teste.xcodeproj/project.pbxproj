@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		63C7A3ACD019151C19AFB075 /* Pods_IAP_Final_Teste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A40420C66C769F445D98C51 /* Pods_IAP_Final_Teste.framework */; };
 		D023BD01234FA25E00BA5A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023BD00234FA25E00BA5A34 /* AppDelegate.swift */; };
-		D023BD03234FA25E00BA5A34 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023BD02234FA25E00BA5A34 /* SceneDelegate.swift */; };
 		D023BD05234FA25E00BA5A34 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D023BD04234FA25E00BA5A34 /* ViewController.swift */; };
 		D023BD08234FA25E00BA5A34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D023BD06234FA25E00BA5A34 /* Main.storyboard */; };
 		D023BD0A234FA25F00BA5A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D023BD09234FA25F00BA5A34 /* Assets.xcassets */; };
@@ -22,7 +21,6 @@
 		9FE1026D622DD1EA59D43972 /* Pods-IAP Final Teste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IAP Final Teste.release.xcconfig"; path = "Target Support Files/Pods-IAP Final Teste/Pods-IAP Final Teste.release.xcconfig"; sourceTree = "<group>"; };
 		D023BCFD234FA25E00BA5A34 /* IAPFinalTeste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IAPFinalTeste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D023BD00234FA25E00BA5A34 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D023BD02234FA25E00BA5A34 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D023BD04234FA25E00BA5A34 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D023BD07234FA25E00BA5A34 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D023BD09234FA25F00BA5A34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				D023BD00234FA25E00BA5A34 /* AppDelegate.swift */,
-				D023BD02234FA25E00BA5A34 /* SceneDelegate.swift */,
 				D023BD04234FA25E00BA5A34 /* ViewController.swift */,
 				D023BD06234FA25E00BA5A34 /* Main.storyboard */,
 				D023BD09234FA25F00BA5A34 /* Assets.xcassets */,
@@ -212,7 +209,6 @@
 			files = (
 				D023BD05234FA25E00BA5A34 /* ViewController.swift in Sources */,
 				D023BD01234FA25E00BA5A34 /* AppDelegate.swift in Sources */,
-				D023BD03234FA25E00BA5A34 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -342,7 +338,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -357,6 +353,7 @@
 			baseConfigurationReference = FE3155C49230E9A5C655B3AF /* Pods-IAP Final Teste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5A2JBGBG3;
 				INFOPLIST_FILE = "IAP Final Teste/Info.plist";
@@ -366,7 +363,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.biologiatotal.tutorialIAP;
 				PRODUCT_NAME = IAPFinalTeste;
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -376,6 +374,7 @@
 			baseConfigurationReference = 9FE1026D622DD1EA59D43972 /* Pods-IAP Final Teste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H5A2JBGBG3;
 				INFOPLIST_FILE = "IAP Final Teste/Info.plist";
@@ -385,7 +384,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.biologiatotal.tutorialIAP;
 				PRODUCT_NAME = IAPFinalTeste;
-				SWIFT_VERSION = 5.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
